@@ -1,7 +1,7 @@
 # Modifications compared to the original version:
 
 As explained in this issue:
-https://github.com/Hootrix/keyword_alert_bot/issues/29 信息显示为一行
+https://github.com/Hootrix/keyword_alert_bot/issues/29 
 
 The messages were shortened for a better overview as shown here:
 ![image](https://user-images.githubusercontent.com/665889/202410324-6b9b696f-27b0-4730-9491-6508fa30b89a.png)
@@ -146,10 +146,11 @@ http://t.me/keyword_alert_bot
 # USAGE
 
 ## Normal keyword matching
+The channel is now searched for the words "free" or "coupon"
 
 ```
-/subscribe   免费     https://t.me/tianfutong
-/subscribe   优惠券   https://t.me/tianfutong
+/subscribe   free     https://t.me/tianfutong
+/subscribe   coupon   https://t.me/tianfutong
 
 ```
 
