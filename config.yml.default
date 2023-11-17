@@ -2,13 +2,13 @@
 
 # Config BOT and account
 account: 
-  # 监听频道信息的账户
+  # Account to monitor channel information
   api_id : '1400003'
   api_hash : 'd11xxxxx112a7e059e831'
   phone : '+86190000010'
   username : 'cliasaxxxev'
 
-  # 发送消息的bot token
+  # bot token
   bot_token : '1000007:AAHNh8axxxxxxxxxxxxxxxxHA'
   bot_username : 'keyxxxxxrt_bot' 
 
@@ -17,29 +17,30 @@ logger:
   path: null # /root/absolute-path/   default null: _current_path
   level: INFO # FATAL,ERROR,WARN,INFO,DEBUG,NOTSET
 
-# 代理
+# proxy
 proxy:
   type: SOCKS5 # e.g. SOCKS4, SOCKS5, HTTP
   address: null  # e.g. 127.0.0.1
   port: null # e.g. 1088
 
 
-# 自动退群/频道（针对无有效订阅记录的群/频道）
+# Automatically leave groups/channels (for groups/channels without valid subscription records)
 auto_leave_channel: false
 
 
-# 消息去重规则
-  # SUBSCRIBE_ID: 默认规则 按照订阅去重
-  # MESSAGE_ID: 按消息id去重（若该消息同时命中多条订阅，只返回第一条订阅提醒）
+# Message deduplication rules
+  # SUBSCRIBE_ID: Default rule: Deduplication according to subscription
+  # MESSAGE_ID: Deduplicate by message ID (if the message hits multiple subscriptions at the same time, only the first subscription reminder will be returned)
 msg_unique_rule: SUBSCRIBE_ID # default SUBSCRIBE_ID
 
-# 非公共服务
-# 此bot只为指定的用户服务
+# non-public services
+# This bot only serves specified users
 private_service: false
 authorized_users: 
   - 123456789
   - 987654321
 
-# 禁止监听机器人发送的消息(仅限群组)
-# 比如，有些群里有自动回复机器人，回复的都是重复的消息；或者一些广告机器人加群之后开始刷屏
+# Disable listening to messages sent by bots (groups only)
+# For example, some groups have automatic reply robots that reply to repeated messages; or some advertising robots start to swipe the screen after joining the group.
+​
 block_bot_msg: false # default allow
